@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Red Flag or Overthinking? — Free 5-Minute Clarity Check</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Lato',sans-serif;background:#f5f0eb;color:#2d1b3d;}
+
+  /* HERO */
+  .hero{
+    background:#2d1b3d;
+    color:#f5f0eb;
+    padding:64px 24px 56px;
+    text-align:center;
+  }
+  .hero-eyebrow{
+    font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;
+    color:#b89ec8;margin-bottom:18px;
+  }
+  .hero-title{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(34px,5vw,52px);line-height:1.2;
+    color:#f5f0eb;margin-bottom:20px;
+    max-width:700px;margin-left:auto;margin-right:auto;
+  }
+  .hero-title em{color:#c8a8d8;font-style:italic;}
+  .hero-sub{
+    font-size:clamp(16px,2.5vw,19px);line-height:1.65;
+    color:#d4bce4;max-width:580px;
+    margin:0 auto 32px;
+  }
+  .hero-promise{
+    display:inline-block;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(200,168,216,0.4);
+    border-radius:8px;padding:14px 24px;
+    font-size:15px;color:#e8d8f4;
+    line-height:1.5;max-width:560px;
+    font-style:italic;
+  }
+
+  /* SOCIAL PROOF BAR */
+  .proof-bar{
+    background:#542954;
+    padding:14px 24px;
+    text-align:center;
+    font-size:13px;color:#e8d8f4;
+    letter-spacing:0.5px;
+  }
+
+  /* BENEFITS */
+  .benefits{
+    max-width:680px;margin:0 auto;
+    padding:56px 24px 48px;
+  }
+  .section-eyebrow{
+    font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;
+    color:#542954;margin-bottom:12px;text-align:center;
+  }
+  .section-heading{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(26px,4vw,34px);line-height:1.3;
+    color:#2d1b3d;margin-bottom:10px;text-align:center;
+  }
+  .section-sub{
+    font-size:15.5px;color:#4a3558;line-height:1.7;
+    text-align:center;margin-bottom:36px;
+  }
+  .benefit-list{
+    list-style:none;display:flex;flex-direction:column;gap:16px;
+  }
+  .benefit-item{
+    display:flex;gap:16px;align-items:flex-start;
+    background:#fff;border-radius:10px;
+    padding:18px 22px;
+    border-left:4px solid #542954;
+  }
+  .benefit-icon{
+    width:32px;height:32px;background:#542954;
+    border-radius:50%;display:flex;align-items:center;justify-content:center;
+    color:#f5f0eb;font-size:15px;font-weight:700;flex-shrink:0;
+  }
+  .benefit-text{font-size:15px;line-height:1.6;color:#2d1b3d;}
+  .benefit-text strong{color:#542954;}
+
+  /* DIVIDER */
+  .divider{
+    max-width:680px;margin:0 auto;
+    height:1px;background:#d8cde8;
+  }
+
+  /* OPT-IN FORM */
+  .optin{
+    max-width:560px;margin:0 auto;
+    padding:56px 24px 64px;
+    text-align:center;
+  }
+  .optin-heading{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(28px,4vw,36px);line-height:1.25;
+    color:#2d1b3d;margin-bottom:12px;
+  }
+  .optin-sub{
+    font-size:15.5px;color:#4a3558;line-height:1.65;
+    margin-bottom:32px;
+  }
+  .form-card{
+    background:#fff;border-radius:14px;
+    padding:36px 32px;
+    box-shadow:0 4px 24px rgba(84,41,84,0.12);
+  }
+  .form-label{
+    display:block;font-size:12px;font-weight:700;
+    letter-spacing:1.5px;text-transform:uppercase;
+    color:#542954;margin-bottom:7px;text-align:left;
+  }
+  .form-input{
+    width:100%;padding:14px 16px;
+    border:1.5px solid #c8b8d8;border-radius:8px;
+    font-family:'Lato',sans-serif;font-size:15px;
+    color:#2d1b3d;background:#faf7ff;
+    margin-bottom:18px;
+    transition:border-color 0.2s;
+  }
+  .form-input:focus{outline:none;border-color:#542954;}
+  .form-btn{
+    width:100%;padding:17px;
+    background:#542954;color:#f5f0eb;
+    border:none;border-radius:8px;
+    font-family:'Lato',sans-serif;
+    font-size:17px;font-weight:700;
+    cursor:pointer;letter-spacing:0.3px;
+    transition:background 0.2s;
+    margin-top:4px;
+  }
+  .form-btn:hover{background:#3d1b42;}
+  .form-btn:disabled{background:#9a85aa;cursor:not-allowed;}
+  .form-privacy{
+    font-size:12px;color:#9a85aa;margin-top:14px;
+    line-height:1.5;
+  }
+  .form-error{
+    color:#c0392b;font-size:13px;margin-top:8px;display:none;
+  }
+
+  /* WHAT'S INSIDE */
+  .inside{
+    background:#2d1b3d;padding:56px 24px;
+  }
+  .inside-inner{max-width:680px;margin:0 auto;text-align:center;}
+  .inside h2{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(26px,4vw,34px);color:#f5f0eb;
+    line-height:1.3;margin-bottom:10px;
+  }
+  .inside-sub{
+    font-size:15px;color:#c8a8d8;line-height:1.6;margin-bottom:36px;
+  }
+  .inside-grid{
+    display:grid;grid-template-columns:1fr 1fr;gap:16px;
+    text-align:left;
+  }
+  @media(max-width:520px){.inside-grid{grid-template-columns:1fr;}}
+  .inside-card{
+    background:rgba(255,255,255,0.07);
+    border:1px solid rgba(200,168,216,0.25);
+    border-radius:10px;padding:20px;
+  }
+  .inside-num{
+    font-size:11px;font-weight:700;letter-spacing:2px;
+    text-transform:uppercase;color:#b89ec8;margin-bottom:8px;
+  }
+  .inside-text{font-size:14.5px;color:#e8d8f4;line-height:1.55;}
+
+  /* ABOUT */
+  .about{
+    max-width:680px;margin:0 auto;
+    padding:56px 24px;
+    display:flex;gap:36px;align-items:flex-start;
+  }
+  @media(max-width:560px){.about{flex-direction:column;gap:24px;}}
+  .about-avatar{
+    width:100px;height:100px;border-radius:50%;
+    background:#542954;flex-shrink:0;
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Playfair Display',serif;
+    font-size:32px;color:#f5f0eb;
+    border:3px solid #b89ec8;
+  }
+  .about-name{
+    font-family:'Playfair Display',serif;
+    font-size:22px;color:#2d1b3d;margin-bottom:6px;
+  }
+  .about-role{
+    font-size:12px;font-weight:700;letter-spacing:2px;
+    text-transform:uppercase;color:#542954;margin-bottom:12px;
+  }
+  .about-text{font-size:15px;color:#4a3558;line-height:1.7;}
+
+  /* FOOTER */
+  footer{
+    background:#1a0d24;padding:28px 24px;
+    text-align:center;
+    font-size:12px;color:#7c5a8c;line-height:1.8;
+  }
+  footer a{color:#9a85aa;}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <p class="hero-eyebrow">Free 5-Minute Clarity Check · The Date Profiler</p>
+  <h1 class="hero-title">
+    Is It a Red Flag,<br/>or Are You <em>Overthinking</em> It?
+  </h1>
+  <p class="hero-sub">
+    7 honest questions that cut through the confusion — and tell you what your gut is actually picking up on.
+  </p>
+  <div class="hero-promise">
+    "You don't need more time with someone to know something's off.<br/>You need the right questions."
+  </div>
+</section>
+
+<!-- SOCIAL PROOF -->
+<div class="proof-bar">
+  Free instant download &nbsp;·&nbsp; No fluff &nbsp;·&nbsp; Built by a former investigator turned dating coach
+</div>
+
+<!-- BENEFITS -->
+<section class="benefits">
+  <p class="section-eyebrow">What You'll Figure Out</p>
+  <h2 class="section-heading">Stop Second-Guessing Every Little Thing</h2>
+  <p class="section-sub">
+    This quick clarity check helps you separate real warning signs from dating anxiety — so you can trust your own read on someone.
+  </p>
+  <ul class="benefit-list">
+    <li class="benefit-item">
+      <div class="benefit-icon">✓</div>
+      <div class="benefit-text"><strong>Know if your instincts are onto something real</strong> — or if anxiety is running the show</div>
+    </li>
+    <li class="benefit-item">
+      <div class="benefit-icon">✓</div>
+      <div class="benefit-text"><strong>Spot the patterns that actually matter</strong> — before you're months in and emotionally attached</div>
+    </li>
+    <li class="benefit-item">
+      <div class="benefit-icon">✓</div>
+      <div class="benefit-text"><strong>Get a clear result in under 5 minutes</strong> — no therapy speak, no guesswork</div>
+    </li>
+    <li class="benefit-item">
+      <div class="benefit-icon">✓</div>
+      <div class="benefit-text"><strong>Stop overthinking and start trusting yourself</strong> — you have better instincts than you think</div>
+    </li>
+  </ul>
+</section>
+
+<div class="divider"></div>
+
+<!-- WHAT'S INSIDE -->
+<section class="inside">
+  <div class="inside-inner">
+    <p class="section-eyebrow" style="color:#b89ec8;">Inside the Free Quiz</p>
+    <h2>7 Questions. Real Answers.<br/>No More Wondering.</h2>
+    <p class="inside-sub">Each question targets a specific behavior pattern — the kind investigators are trained to notice.</p>
+    <div class="inside-grid">
+      <div class="inside-card">
+        <div class="inside-num">Pattern 01</div>
+        <div class="inside-text">How he handles pulling away — and whether silence is a choice or a habit</div>
+      </div>
+      <div class="inside-card">
+        <div class="inside-num">Pattern 02</div>
+        <div class="inside-text">What happens when you bring something up — and whether you feel safe doing it</div>
+      </div>
+      <div class="inside-card">
+        <div class="inside-num">Pattern 03</div>
+        <div class="inside-text">How often you're explaining him to others — and what that actually signals</div>
+      </div>
+      <div class="inside-card">
+        <div class="inside-num">Pattern 04</div>
+        <div class="inside-text">Whether his words and his actions line up — consistently</div>
+      </div>
+      <div class="inside-card">
+        <div class="inside-num">Pattern 05</div>
+        <div class="inside-text">How you feel in the days after spending time with him — not in the moment</div>
+      </div>
+      <div class="inside-card">
+        <div class="inside-num">Pattern 06</div>
+        <div class="inside-text">Whether the story he tells you holds up over time</div>
+      </div>
+      <div class="inside-card">
+        <div class="inside-num">Pattern 07</div>
+        <div class="inside-text">What staying in this for another 6 months actually feels like when you're honest</div>
+      </div>
+      <div class="inside-card" style="background:rgba(200,168,216,0.15);border-color:rgba(200,168,216,0.4);">
+        <div class="inside-num">+ Results</div>
+        <div class="inside-text">3 possible outcomes with honest, no-fluff takeaways for each one</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OPT-IN FORM -->
+<section class="optin">
+  <h2 class="optin-heading">Get Your Free Clarity Check</h2>
+  <p class="optin-sub">Enter your name and email below. I'll send it straight to your inbox — right now.</p>
+
+  <div class="form-card">
+    <form id="optin-form">
+      <label class="form-label" for="firstName">First Name</label>
+      <input class="form-input" type="text" id="firstName" name="firstName" placeholder="Your first name" required/>
+
+      <label class="form-label" for="email">Email Address</label>
+      <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com" required/>
+
+      <button class="form-btn" type="submit" id="submit-btn">
+        Send Me the Free Quiz &rarr;
+      </button>
+      <div class="form-error" id="form-error">Something went wrong. Please try again.</div>
+      <p class="form-privacy">No spam. Unsubscribe anytime. Your information is safe.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section style="background:#fff;">
+  <div class="about">
+    <div class="about-avatar">S</div>
+    <div>
+      <div class="about-name">Stephanie Lastella</div>
+      <div class="about-role">The Date Profiler™</div>
+      <p class="about-text">
+        Stephanie spent years as an investigator learning to read patterns, verify stories, and spot inconsistency. Now she teaches single women to use those same skills in their dating lives — so they can choose healthier relationships without swearing off love forever.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  &copy; 2026 The Date Profiler &nbsp;·&nbsp; <a href="https://thedateprofiler.com">thedateprofiler.com</a> &nbsp;·&nbsp; @thedateprofiler<br/>
+  This guide is for self-reflection purposes only and is not a clinical or diagnostic tool.
+</footer>
+
+<script>
+document.getElementById('optin-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submit-btn');
+  const errEl = document.getElementById('form-error');
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+  errEl.style.display = 'none';
+
+  const firstName = document.getElementById('firstName').value.trim();
+  const email = document.getElementById('email').value.trim();
+
+  try {
+    const res = await fetch('/api/subscribe', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({firstName, email})
+    });
+    if (res.ok) {
+      window.location.href = '/thank-you';
+    } else {
+      throw new Error('Server error');
+    }
+  } catch(err) {
+    btn.disabled = false;
+    btn.textContent = 'Send Me the Free Quiz →';
+    errEl.style.display = 'block';
+  }
+});
+</script>
+</body>
+</html>
