@@ -8,14 +8,5 @@
       "path": "/api/process-emails",
       "schedule": "0 14 * * *"
     }
-  ],
-  "env": {
-    "GHL_API_KEY": "@ghl_api_key",
-    "GHL_LOCATION_ID": "@ghl_location_id",
-    "GMAIL_CLIENT_ID": "@gmail_client_id",
-    "GMAIL_CLIENT_SECRET": "@gmail_client_secret",
-    "GMAIL_REFRESH_TOKEN": "@gmail_refresh_token",
-    "TURSO_URL": "@turso_url",
-    "TURSO_TOKEN": "@turso_token"
-  }
+  ]
 }
