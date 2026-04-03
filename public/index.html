@@ -43,6 +43,27 @@
     line-height:1.5;max-width:560px;
     font-style:italic;
   }
+  .hero-cta{
+    display:inline-block;
+    margin-top:32px;
+    background:#542954;
+    color:#f5f0eb;
+    padding:16px 36px;
+    border-radius:8px;
+    font-family:'Lato',sans-serif;
+    font-size:17px;font-weight:700;
+    text-decoration:none;
+    letter-spacing:0.3px;
+    transition:background 0.2s;
+  }
+  .hero-cta:hover{background:#3d1b42;}
+  .instant-delivery{
+    font-size:14px;
+    color:#542954;
+    font-weight:700;
+    margin-top:18px;
+    letter-spacing:0.03em;
+  }
 
   /* SOCIAL PROOF BAR */
   .proof-bar{
@@ -225,11 +246,12 @@
   <div class="hero-promise">
     "You don't need more time with someone to know something's off.<br/>You need the right questions."
   </div>
+  <a href="#optin" class="hero-cta">Get My Free Clarity Check &rarr;</a>
 </section>
 
 <!-- SOCIAL PROOF -->
 <div class="proof-bar">
-  Free instant download &nbsp;·&nbsp; No fluff &nbsp;·&nbsp; Built by a former investigator turned dating coach
+  Free instant download &nbsp;·&nbsp; No fluff &nbsp;·&nbsp; Built by Stephanie — 15 years in law enforcement, now teaching women to read patterns in dating
 </div>
 
 <!-- BENEFITS -->
@@ -305,9 +327,9 @@
 </section>
 
 <!-- OPT-IN FORM -->
-<section class="optin">
-  <h2 class="optin-heading">Get Your Free Clarity Check</h2>
-  <p class="optin-sub">Enter your name and email below. I'll send it straight to your inbox — right now.</p>
+<section class="optin" id="optin">
+  <h2 class="optin-heading">Find Out Right Now</h2>
+  <p class="optin-sub">Enter your info and I'll send the clarity check straight to your inbox — takes 5 minutes to complete.</p>
 
   <div class="form-card">
     <form id="optin-form">
@@ -318,12 +340,13 @@
       <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com" required/>
 
       <button class="form-btn" type="submit" id="submit-btn">
-        Send Me the Free Quiz &rarr;
+        Yes, Send Me the Clarity Check &rarr;
       </button>
       <div class="form-error" id="form-error">Something went wrong. Please try again.</div>
-      <p class="form-privacy">No spam. Unsubscribe anytime. Your information is safe.</p>
+      <p class="form-privacy">By submitting, you agree to receive emails from The Date Profiler including your quiz and occasional tips. Unsubscribe anytime.</p>
     </form>
   </div>
+  <p class="instant-delivery">&#128229; Delivered instantly to your inbox.</p>
 </section>
 
 <!-- ABOUT -->
@@ -334,7 +357,7 @@
       <div class="about-name">Stephanie Lastella</div>
       <div class="about-role">The Date Profiler™</div>
       <p class="about-text">
-        Stephanie spent years as an investigator learning to read patterns, verify stories, and spot inconsistency. Now she teaches single women to use those same skills in their dating lives — so they can choose healthier relationships without swearing off love forever.
+        Stephanie spent 15 years in law enforcement studying manipulation tactics, behavioral patterns, and how people deceive. She also holds a Master's in Counseling. Now she teaches single women to use those same skills in their dating lives — so they can choose healthier relationships without swearing off love forever.
       </p>
     </div>
   </div>
