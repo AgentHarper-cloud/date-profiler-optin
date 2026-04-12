@@ -7,7 +7,7 @@
 
 const https = require('https');
 
-const SALES_URL = 'https://go.thedateprofiler.com/sales-page';
+const SALES_URL = 'https://go.thedateprofiler.com/sales-page?utm_source=email&utm_medium=email&utm_campaign=quiz-sequence&utm_content=email1';
 const QUIZ_PDF_URL = 'https://drive.google.com/uc?id=1hYvaw848NRsFsYvbErduQNqblM42-fo8&export=download';
 const UNSUB_BASE = 'https://date-profiler-optin.vercel.app/api/unsubscribe?email=';
 

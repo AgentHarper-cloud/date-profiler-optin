@@ -9,7 +9,8 @@ const TURSO_TOKEN = process.env.TURSO_TOKEN;
 const GMAIL_CLIENT_ID = process.env.GMAIL_CLIENT_ID;
 const GMAIL_CLIENT_SECRET = process.env.GMAIL_CLIENT_SECRET;
 const GMAIL_REFRESH_TOKEN = process.env.GMAIL_REFRESH_TOKEN;
-const SALES_URL = 'https://go.thedateprofiler.com/sales-page';
+const SALES_BASE = 'https://go.thedateprofiler.com/sales-page';
+const salesUrl = (n) => `${SALES_BASE}?utm_source=email&utm_medium=email&utm_campaign=quiz-sequence&utm_content=email${n}`;
 const SKOOL_URL = 'https://www.skool.com/date-like-a-profiler-skool-2923/about';
 const UNSUB_BASE = 'https://date-profiler-optin.vercel.app/api/unsubscribe?email=';
 
@@ -103,10 +104,10 @@ function getEmailContent(nextEmail, first, unsub) {
 <p>If that's the kind of space you've been looking for, I'd love to have you in there. It's free.</p>
 <p>Join us here: ${link('The Date Profiler Headquarters', SKOOL_URL)}</p>
 <p><strong>The second is not free, but it's close.</strong></p>
-<p>${link('The Date Profiler Field Manual', SALES_URL)} is the complete system I built after years of applying what I learned in law enforcement to real life. It walks you through how to assess someone's character early, how to identify the patterns that matter, and how to trust your own read of a situation, even when your feelings are complicated.</p>
+<p>${link('The Date Profiler Field Manual', salesUrl(3))} is the complete system I built after years of applying what I learned in law enforcement to real life. It walks you through how to assess someone's character early, how to identify the patterns that matter, and how to trust your own read of a situation, even when your feelings are complicated.</p>
 <p>It's not a list of rules. It's a framework. The same kind I use personally.</p>
 <p>Right now, you can get it for $17. This is an introductory offer and that price will go up, but I want the women who found me early to have access first.</p>
-<p>Get it here: ${link('The Date Profiler Field Manual', SALES_URL)}</p>
+<p>Get it here: ${link('The Date Profiler Field Manual', salesUrl(3))}</p>
 <p>Hit reply and let me know how you're doing. I read every response.</p>
 <p>Stephanie<br>The Date Profiler</p>`
     },
@@ -125,7 +126,7 @@ function getEmailContent(nextEmail, first, unsub) {
 <p>The man I fell in love with was the tactic. The rest was who he actually was.</p>
 <p>After my divorce I started applying everything I knew professionally to my personal life. Not to become cynical. To stop being someone who needed a coworker's comment to see what was right in front of me.</p>
 <p>That's what the Field Manual is. It's the system I wish I'd had before any of it happened.</p>
-<p>If you're ready for it: ${link('The Date Profiler Field Manual', SALES_URL)}</p>
+<p>If you're ready for it: ${link('The Date Profiler Field Manual', salesUrl(4))}</p>
 <p>Still $17. Not forever.</p>
 <p>Stephanie<br>The Date Profiler</p>`
     },
@@ -143,7 +144,7 @@ function getEmailContent(nextEmail, first, unsub) {
 <p><strong>Here is the honest reason to get it now:</strong></p>
 <p>I am adding video trainings to the Field Manual. When that update is complete, the price goes up. Everyone who buys before the update is locked in at $17 and gets the video content at no extra charge.</p>
 <p>The trainings are in progress and the price increases when they are done.</p>
-<p>Get it at the founding price: ${link('The Date Profiler Field Manual', SALES_URL)}</p>
+<p>Get it at the founding price: ${link('The Date Profiler Field Manual', salesUrl(5))}</p>
 <p>Stephanie<br>The Date Profiler</p>`
     },
     6: {
@@ -154,7 +155,7 @@ function getEmailContent(nextEmail, first, unsub) {
 <p>I don't know exactly when the videos will be done. What I do know is that when they are, $17 goes away.</p>
 <p>If you've been thinking about it all week, this is the nudge.</p>
 <p>If it doesn't feel right yet, that's genuinely okay. You're always welcome here and I'll keep showing up in your inbox with useful things regardless.</p>
-<p>But if you're ready: ${link('The Date Profiler Field Manual', SALES_URL)}</p>
+<p>But if you're ready: ${link('The Date Profiler Field Manual', salesUrl(6))}</p>
 <p>Either way, I'm glad you're here.</p>
 <p>Stephanie<br>The Date Profiler</p>
 <p>PS: Questions about whether it's right for you? Hit reply. I actually respond.</p>`
