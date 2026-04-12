@@ -111,23 +111,6 @@ function getEmailContent(nextEmail, first, unsub) {
 <p>Stephanie<br>The Date Profiler</p>`
     },
     4: {
-      subject: 'What to expect from me going forward',
-      body: `<p>Hey ${first},</p>
-<p>I've loved getting to show up in your inbox this week.</p>
-<p>Before I get back to my regular schedule, I want to make sure you know what that looks like, so you know what's coming and why.</p>
-<p>Every week I show up with:</p>
-<p>Content that teaches you something real about reading people, spotting patterns, and trusting yourself in dating. Not motivational filler. Actual tools.</p>
-<p>Honest conversation about what healthy relationships look like, because a lot of us have been around so much dysfunction that safety feels unfamiliar. I want to help with that.</p>
-<p>Resources, trainings, and occasionally an offer, but only things I actually believe in.</p>
-<p>You can also find me posting on Instagram, TikTok, and YouTube at @thedateprofiler if you want the shorter version throughout the week.</p>
-<p><strong>One more thing before I go:</strong></p>
-<p>You can still get the Field Manual at the introductory price of $17.</p>
-<p>If you've been thinking about it, it's better to get it sooner rather than later. I am working on adding video training to the guide and once that is complete, I will raise the price. If you purchase before the update, you will get the update at no additional cost.</p>
-<p>Get it before the price increases: ${link('The Date Profiler Field Manual', SALES_URL)}</p>
-<p>See you in your inbox.</p>
-<p>Stephanie<br>The Date Profiler</p>`
-    },
-    5: {
       subject: "The thing I had to learn the hard way",
       body: `<p>Hey ${first},</p>
 <p>I didn't build this framework because I was good at reading people.</p>
@@ -144,6 +127,23 @@ function getEmailContent(nextEmail, first, unsub) {
 <p>That's what the Field Manual is. It's the system I wish I'd had before any of it happened.</p>
 <p>If you're ready for it: ${link('The Date Profiler Field Manual', SALES_URL)}</p>
 <p>Still $17. Not forever.</p>
+<p>Stephanie<br>The Date Profiler</p>`
+    },
+    5: {
+      subject: "What's inside the Field Manual (and why $17 won't last)",
+      body: `<p>Hey ${first},</p>
+<p>I want to make sure you know exactly what's inside the Field Manual before you decide, because today is the day to decide.</p>
+<p>Here's what it covers:</p>
+<p><strong>Part 1: How to read behavior instead of words.</strong> Most people listen to what someone says. The Field Manual teaches you to watch what they do and specifically what to look for in the first few weeks of dating.</p>
+<p><strong>Part 2: The patterns that matter.</strong> A breakdown of the most common manipulation tactics, explained in plain language, with the specific signs to watch for in real life situations.</p>
+<p><strong>Part 3: Your internal system.</strong> How to tell the difference between anxiety and intuition, and how to trust your own read of a situation even when your feelings are complicated.</p>
+<p><strong>Part 4: The green flag framework.</strong> Because this isn't about becoming cynical. It's about knowing what safe actually looks and feels like, so you can recognize it when it's in front of you.</p>
+<p>It was built from 15 years of studying how people operate, a Master's in Counseling, and a lot of personal experience applying all of that to my own life after divorce.</p>
+<p>And when you get it at the founding price, it also comes with the Profiler in Your Purse GPT, a custom AI tool built on the same framework as the Field Manual. You bring it a real situation you are dealing with right now, and it walks you through what the patterns suggest, what level of concern to have, and what to watch next. It is the Field Manual, but interactive and available at 2am when you actually need it.</p>
+<p><strong>Here is the honest reason to get it now:</strong></p>
+<p>I am adding video trainings to the Field Manual. When that update is complete, the price goes up. Everyone who buys before the update is locked in at $17 and gets the video content at no extra charge.</p>
+<p>The trainings are in progress and the price increases when they are done.</p>
+<p>Get it at the founding price: ${link('The Date Profiler Field Manual', SALES_URL)}</p>
 <p>Stephanie<br>The Date Profiler</p>`
     },
     6: {
