@@ -128,20 +128,22 @@ function getEmailContent(nextEmail, first, unsub) {
 <p>Stephanie<br>The Date Profiler</p>`
     },
     5: {
-      subject: "What's inside the Field Manual (and why $17 won't last)",
+      subject: "The thing I had to learn the hard way",
       body: `<p>Hey ${first},</p>
-<p>I want to make sure you know exactly what's inside the Field Manual before you decide, because today is the day to decide.</p>
-<p>Here's what it covers:</p>
-<p><strong>Part 1: How to read behavior instead of words.</strong> Most people listen to what someone says. The Field Manual teaches you to watch what they do and specifically what to look for in the first few weeks of dating.</p>
-<p><strong>Part 2: The patterns that matter.</strong> A breakdown of the most common manipulation tactics, explained in plain language, with the specific signs to watch for in real life situations.</p>
-<p><strong>Part 3: Your internal system.</strong> How to tell the difference between anxiety and intuition, and how to trust your own read of a situation even when your feelings are complicated.</p>
-<p><strong>Part 4: The green flag framework.</strong> Because this isn't about becoming cynical. It's about knowing what safe actually looks and feels like, so you can recognize it when it's in front of you.</p>
-<p>It was built from 15 years of studying how people operate, a Master's in Counseling, and a lot of personal experience applying all of that to my own life after divorce.</p>
-<p>And when you get it at the founding price, it also comes with the Profiler in Your Purse GPT, a custom AI tool built on the same framework as the Field Manual. You bring it a real situation you are dealing with right now, and it walks you through what the patterns suggest, what level of concern to have, and what to watch next. It is the Field Manual, but interactive and available at 2am when you actually need it.</p>
-<p><strong>Here is the honest reason to get it now:</strong></p>
-<p>I am adding video trainings to the Field Manual. When that update is complete, the price goes up. Everyone who buys before the update is locked in at $17 and gets the video content at no extra charge.</p>
-<p>The trainings are in progress and the price increases when they are done.</p>
-<p>Get it at the founding price: ${link('The Date Profiler Field Manual', SALES_URL)}</p>
+<p>I didn't build this framework because I was good at reading people.</p>
+<p>I built it because I wasn't.</p>
+<p>I was married to someone who was charming, attentive, and completely convincing. The guy I fell in love with felt real. Turned out he was the performance. What came after was something different.</p>
+<p>I didn't see it clearly until a coworker made an offhand comment about domestic violence. She mentioned that threatening to harm a pet was considered abuse.</p>
+<p>I drove home that night thinking about my dog.</p>
+<p>I started googling. I went through every list, every sign, every pattern. And I sat there checking boxes I didn't want to check.</p>
+<p>The thing that hit me hardest wasn't the anger or the fear. It was the recognition.</p>
+<p>I had spent years in law enforcement studying exactly how manipulators operate. I knew the tactics. I had seen them used on other people. And I had still missed it in my own life.</p>
+<p>Because love bombing works. The version of him I fell in love with felt completely real. I kept waiting for that person to come back. I kept explaining away the version that showed up instead.</p>
+<p>The man I fell in love with was the tactic. The rest was who he actually was.</p>
+<p>After my divorce I started applying everything I knew professionally to my personal life. Not to become cynical. To stop being someone who needed a coworker's comment to see what was right in front of me.</p>
+<p>That's what the Field Manual is. It's the system I wish I'd had before any of it happened.</p>
+<p>If you're ready for it: ${link('The Date Profiler Field Manual', SALES_URL)}</p>
+<p>Still $17. Not forever.</p>
 <p>Stephanie<br>The Date Profiler</p>`
     },
     6: {
