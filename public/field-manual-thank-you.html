@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Your Field Manual is Ready — The Date Profiler</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Lato',sans-serif;background:#f5f0eb;color:#2d1b3d;}
+
+  .hero{
+    background:#2d1b3d;color:#f5f0eb;
+    padding:56px 24px 48px;text-align:center;
+  }
+  .check{
+    width:64px;height:64px;
+    background:#542954;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    margin:0 auto 24px;font-size:28px;
+  }
+  .hero-eyebrow{
+    font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;
+    color:#b89ec8;margin-bottom:14px;
+  }
+  .hero-title{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(30px,5vw,44px);line-height:1.25;
+    color:#f5f0eb;margin-bottom:16px;
+  }
+  .hero-sub{
+    font-size:16px;color:#d4bce4;line-height:1.65;
+    max-width:500px;margin:0 auto;
+  }
+
+  .section{
+    max-width:580px;margin:0 auto;
+    padding:48px 24px;
+  }
+
+  .card{
+    background:#fff;border-radius:14px;
+    padding:36px 32px;
+    box-shadow:0 4px 24px rgba(84,41,84,0.12);
+    margin-bottom:20px;
+    text-align:center;
+  }
+  .card-icon{font-size:40px;margin-bottom:16px;}
+  .card-title{
+    font-family:'Playfair Display',serif;
+    font-size:24px;color:#2d1b3d;margin-bottom:8px;
+  }
+  .card-sub{
+    font-size:14.5px;color:#4a3558;line-height:1.6;margin-bottom:24px;
+  }
+  .download-btn{
+    display:inline-block;
+    background:#2d1b3d;color:#f5f0eb;
+    padding:15px 36px;border-radius:8px;
+    font-size:16px;font-weight:700;
+    text-decoration:none;letter-spacing:0.3px;
+  }
+  .download-btn:hover{background:#542954;}
+  .download-note{
+    font-size:12px;color:#9a85aa;margin-top:12px;
+  }
+
+  /* BONUSES */
+  .bonuses-heading{
+    font-family:'Playfair Display',serif;
+    font-size:22px;color:#2d1b3d;
+    margin-bottom:6px;text-align:center;
+  }
+  .bonuses-sub{
+    font-size:14px;color:#4a3558;text-align:center;
+    margin-bottom:24px;line-height:1.6;
+  }
+  .bonus-row{
+    display:flex;gap:12px;
+    margin-bottom:12px;
+  }
+  .bonus-btn{
+    flex:1;
+    display:block;
+    background:#542954;color:#f5f0eb;
+    padding:13px 16px;border-radius:8px;
+    font-size:13.5px;font-weight:700;
+    text-decoration:none;text-align:center;
+    line-height:1.4;
+  }
+  .bonus-btn:hover{background:#3d1f3d;}
+
+  /* STEPS */
+  .steps-card{
+    background:#2d1b3d;border-radius:14px;
+    padding:32px;margin-bottom:20px;
+  }
+  .steps-heading{
+    font-family:'Playfair Display',serif;
+    font-size:20px;color:#f5f0eb;
+    margin-bottom:20px;text-align:center;
+  }
+  .step{
+    display:flex;gap:14px;align-items:flex-start;
+    margin-bottom:16px;
+  }
+  .step:last-child{margin-bottom:0;}
+  .step-num{
+    width:28px;height:28px;
+    background:#542954;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-size:12px;font-weight:700;color:#f5f0eb;
+    flex-shrink:0;margin-top:1px;
+  }
+  .step-text{
+    font-size:14.5px;color:#e8d8f4;line-height:1.55;
+  }
+  .step-text strong{color:#f5f0eb;}
+
+  /* COMMUNITY */
+  .community-card{
+    background:#fff;border-radius:14px;
+    padding:36px 32px;
+    box-shadow:0 4px 24px rgba(84,41,84,0.12);
+    text-align:center;
+  }
+  .community-icon{font-size:36px;margin-bottom:14px;}
+  .community-title{
+    font-family:'Playfair Display',serif;
+    font-size:22px;color:#2d1b3d;margin-bottom:8px;
+  }
+  .community-sub{
+    font-size:14.5px;color:#4a3558;line-height:1.65;margin-bottom:24px;
+  }
+  .community-btn{
+    display:inline-block;
+    background:#f5f0eb;color:#2d1b3d;
+    border:2px solid #2d1b3d;
+    padding:13px 32px;border-radius:8px;
+    font-size:15px;font-weight:700;
+    text-decoration:none;
+  }
+  .community-btn:hover{background:#2d1b3d;color:#f5f0eb;}
+
+  .divider{
+    max-width:580px;margin:0 auto;
+    height:1px;background:#d8cde8;
+  }
+
+  footer{
+    background:#1a0d24;padding:24px;
+    text-align:center;font-size:12px;
+    color:#7c5a8c;line-height:1.8;
+  }
+  footer a{color:#9a85aa;}
+
+  @media(max-width:480px){
+    .card{padding:28px 20px;}
+    .bonus-row{flex-direction:column;}
+    .steps-card{padding:24px 20px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="check">✓</div>
+  <p class="hero-eyebrow">Order Confirmed</p>
+  <h1 class="hero-title">Your Field Manual is Ready</h1>
+  <p class="hero-sub">
+    Check your inbox for your download link. You can also grab everything right here.
+  </p>
+</section>
+
+<!-- MAIN DOWNLOAD -->
+<div class="section" style="padding-bottom:0;">
+  <div class="card">
+    <div class="card-icon">🔍</div>
+    <h2 class="card-title">The Date Profiler Field Manual</h2>
+    <p class="card-sub">
+      Your complete framework for reading behavior, identifying manipulation tactics, and making clear decisions before you get attached.
+    </p>
+    <a class="download-btn" href="https://drive.google.com/uc?export=download&id=1cQc2KNv0rLc9NMHz6YjZCbvVHT3zb6Fn" target="_blank">
+      &#11015; Download Your Field Manual
+    </a>
+    <p class="download-note">PDF &middot; 24 pages &middot; Save it to your phone or computer</p>
+  </div>
+</div>
+
+<!-- BONUSES -->
+<div class="section" style="padding-top:28px;">
+  <h3 class="bonuses-heading">Your Bonuses</h3>
+  <p class="bonuses-sub">Three extras included with your order &mdash; download all three below.</p>
+
+  <div class="bonus-row">
+    <a class="bonus-btn" href="https://docs.google.com/document/d/1iC1PQUbAP935TG6h-3lBxpBxHIM0nv0f700d3SX9SGA/edit?usp=drivesdk" target="_blank">
+      &#11015; Bonus 1<br/>Profiler in Your Purse
+    </a>
+    <a class="bonus-btn" href="https://docs.google.com/document/d/1Bk7JYj6-4CzSFk-o9o08W_MJYdMyO7doNI8o-QoF-FI/edit?usp=drivesdk" target="_blank">
+      &#11015; Bonus 2<br/>Verify Before You Trust
+    </a>
+    <a class="bonus-btn" href="https://docs.google.com/document/d/1FjO7RMt-sQrb05-z62ADjJLuiFotsJ408vuSc50Ky3w/edit?usp=drivesdk" target="_blank">
+      &#11015; Bonus 3<br/>60-Min Implementation Plan
+    </a>
+  </div>
+
+  <!-- NEXT STEPS -->
+  <div class="steps-card" style="margin-top:8px;">
+    <div class="steps-heading">Here's what to do next</div>
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-text"><strong>Download and save your Field Manual</strong> &mdash; keep it somewhere easy to find. Your phone camera roll works great.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-text"><strong>Start with Chapter 1</strong> &mdash; it reframes how you see the early stages of dating. Most women say it's a light-bulb moment.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-text"><strong>Use it on your next date</strong> &mdash; this isn't a read-once book. It's a field guide. Bring it to the field.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-text"><strong>Check your inbox</strong> &mdash; your access to Profiler in Your Purse (the custom AI tool) will arrive there shortly.</div>
+    </div>
+  </div>
+
+  <!-- COMMUNITY -->
+  <div class="community-card">
+    <div class="community-icon">🔍</div>
+    <h3 class="community-title">Join The Date Profiler Headquarters</h3>
+    <p class="community-sub">
+      Connect with other women learning to date smarter. Share wins, ask questions, and get support between dates. It's free.
+    </p>
+    <a class="community-btn" href="https://www.skool.com/date-like-a-profiler-skool-2923" target="_blank">
+      Join the Community &rarr;
+    </a>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<footer>
+  Questions? Email <a href="mailto:hello@thedateprofiler.com">hello@thedateprofiler.com</a><br/>
+  &copy; 2026 The Date Profiler &nbsp;&middot;&nbsp; <a href="https://thedateprofiler.com">thedateprofiler.com</a>
+</footer>
+
+</body>
+</html>
